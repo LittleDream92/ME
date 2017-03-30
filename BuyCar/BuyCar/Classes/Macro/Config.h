@@ -18,7 +18,7 @@
 
 
 #define TITLE_PARAMS @"title"
-
+#define CURRENT_CITY @"长沙"
 
 
 ///SVP

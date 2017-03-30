@@ -18,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //定位
+    [[MapManager sharedMapManager] dk_getGps];
+    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    
+    //设置根视图
     [self setupRootVC];
     
     return YES;

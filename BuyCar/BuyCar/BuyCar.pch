@@ -38,6 +38,8 @@
 #import "ColorAndFont.h"
 
 
+//Tool
+#import "MapManager.h"
 
 
 #endif /* BuyCar_pch */
