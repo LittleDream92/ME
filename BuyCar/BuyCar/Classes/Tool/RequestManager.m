@@ -15,7 +15,7 @@
 
 
 @implementation RequestManager
-
+/*
 //本地数据(array)
 + (RACSignal *)postArrayDataWithURL:(NSString *)urlString
                           parameter:(NSDictionary *)param {
@@ -45,7 +45,7 @@
         return nil;
     }] delay:time];
 }
-
+*/
 //网络请求
 + (RACSignal *)getWithURL:(NSString *)urlString
                 parameter:(NSDictionary *)param {

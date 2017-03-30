@@ -18,10 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //定位
-    [[MapManager sharedMapManager] dk_getGps];
-    
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    //配置
+    [self setConfig];
     
     //设置根视图
     [self setupRootVC];
@@ -56,6 +54,28 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+- (void)setConfig {
+    //定位
+    [[MapManager sharedMapManager] dk_getGps];
+    
+    //设置HUD的样式是黑色的
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    
+    //test 检测网络状况
+    [[NetWork shareInstance] initNetWork];
+    if ([NetWork shareInstance].isNetReachable) {
+        NSLog(@"YES netWork");
+    } else {
+        NSLog(@"NO netWork");
+    }
+    
+    //设置键盘  单例
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.enableAutoToolbar = NO;
+}
 
 #pragma mark - setupRootVC
 - (void)setupRootVC {

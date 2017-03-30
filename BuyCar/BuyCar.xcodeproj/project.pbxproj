@@ -425,6 +425,7 @@
 				TargetAttributes = {
 					A87D8B081E8CB8B4000A84F5 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S36MBZ2R78;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -638,6 +639,7 @@
 			baseConfigurationReference = F620681FB7D199C16EACACE1 /* Pods-BuyCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S36MBZ2R78;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BuyCar/BuyCar.pch";
 				INFOPLIST_FILE = BuyCar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -652,6 +654,7 @@
 			baseConfigurationReference = FADE49422889A8BFF5CCF353 /* Pods-BuyCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S36MBZ2R78;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BuyCar/BuyCar.pch";
 				INFOPLIST_FILE = BuyCar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

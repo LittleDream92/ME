@@ -30,7 +30,7 @@
 #import <MJRefresh/MJRefresh.h>
 #import "UIImageView+WebCache.h"
 #import <AFNetworking/AFNetworking.h>
-
+#import "IQKeyboardManager.h"
 
 //header
 #import "Config.h"

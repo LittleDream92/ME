@@ -9,5 +9,7 @@ pod 'Masonry'
 pod 'MJRefresh'
 pod 'SVProgressHUD', '~> 2.0.3'
 pod 'Reachability', '~> 3.2'
+pod 'IQKeyboardManager', '~> 4.0.4'
+
 
 end
