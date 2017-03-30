@@ -40,6 +40,8 @@
 
 //Tool
 #import "MapManager.h"
+#import "NetWork.h"
+#import "RequestManager.h"
 
 
 #endif /* BuyCar_pch */

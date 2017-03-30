@@ -23,6 +23,8 @@
 		A87D8B5F1E8CBC07000A84F5 /* DKMeVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B5E1E8CBC07000A84F5 /* DKMeVM.m */; };
 		A87D8B671E8CDDD0000A84F5 /* ViewModelNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B661E8CDDD0000A84F5 /* ViewModelNavigationImpl.m */; };
 		A87D8B731E8CF008000A84F5 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B721E8CF008000A84F5 /* MapManager.m */; };
+		A87D8B781E8CF3B6000A84F5 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B751E8CF3B6000A84F5 /* RequestManager.m */; };
+		A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B771E8CF3B6000A84F5 /* NetWork.m */; };
 		AD6D10F1FBE84096D09FA316 /* libPods-BuyCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		A87D8B661E8CDDD0000A84F5 /* ViewModelNavigationImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelNavigationImpl.m; sourceTree = "<group>"; };
 		A87D8B711E8CF008000A84F5 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
 		A87D8B721E8CF008000A84F5 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
+		A87D8B741E8CF3B6000A84F5 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		A87D8B751E8CF3B6000A84F5 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		A87D8B761E8CF3B6000A84F5 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		A87D8B771E8CF3B6000A84F5 /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
 		CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuyCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620681FB7D199C16EACACE1 /* Pods-BuyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		FADE49422889A8BFF5CCF353 /* Pods-BuyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.release.xcconfig"; sourceTree = "<group>"; };
@@ -368,6 +374,10 @@
 			children = (
 				A87D8B711E8CF008000A84F5 /* MapManager.h */,
 				A87D8B721E8CF008000A84F5 /* MapManager.m */,
+				A87D8B741E8CF3B6000A84F5 /* RequestManager.h */,
+				A87D8B751E8CF3B6000A84F5 /* RequestManager.m */,
+				A87D8B761E8CF3B6000A84F5 /* NetWork.h */,
+				A87D8B771E8CF3B6000A84F5 /* NetWork.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -502,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87D8B781E8CF3B6000A84F5 /* RequestManager.m in Sources */,
 				A87D8B671E8CDDD0000A84F5 /* ViewModelNavigationImpl.m in Sources */,
 				A87D8B461E8CBB27000A84F5 /* BaseNavigationController.m in Sources */,
 				A87D8B731E8CF008000A84F5 /* MapManager.m in Sources */,
@@ -515,6 +526,7 @@
 				A87D8B501E8CBBDB000A84F5 /* DKHomeVC.m in Sources */,
 				A87D8B531E8CBBE4000A84F5 /* DKActivityVC.m in Sources */,
 				A87D8B491E8CBB8B000A84F5 /* DKBaseViewController.m in Sources */,
+				A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */,
 				A87D8B5F1E8CBC07000A84F5 /* DKMeVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

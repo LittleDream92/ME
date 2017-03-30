@@ -8,5 +8,6 @@ pod 'SDWebImage' , '3.7.3'
 pod 'Masonry'
 pod 'MJRefresh'
 pod 'SVProgressHUD', '~> 2.0.3'
+pod 'Reachability', '~> 3.2'
 
 end

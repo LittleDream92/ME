@@ -121,7 +121,7 @@
             [MapManager sharedMapManager].cityName = CURRENT_CITY;
         }
         
-        //        [[CKGpsManager sharedGpsManager] stop];
+//        [[CKGpsManager sharedGpsManager] stop];
         //1.这种是在需要的时候用，和下面NSUserDefaults 看自己的需求来用.
         [[NSNotificationCenter defaultCenter] postNotificationName:@"GPS" object:nil userInfo:@{@"cityName":[MapManager sharedMapManager].cityName}];
         

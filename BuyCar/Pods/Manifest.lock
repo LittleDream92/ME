@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.0.1)
   - MJRefresh (3.1.9)
+  - Reachability (3.2)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - Masonry
   - MJRefresh
+  - Reachability (~> 3.2)
   - ReactiveCocoa (= 2.5)
   - SDWebImage (= 3.7.3)
   - SVProgressHUD (~> 2.0.3)
@@ -40,10 +42,11 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: e80cdd53c502562fc18f2b82310953a79eb62cbe
+PODFILE CHECKSUM: 1d59094cea0d26bdf88754d11a1d9acc7cdf6353
 
 COCOAPODS: 1.0.1
