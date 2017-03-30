@@ -25,6 +25,8 @@
 		A87D8B731E8CF008000A84F5 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B721E8CF008000A84F5 /* MapManager.m */; };
 		A87D8B781E8CF3B6000A84F5 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B751E8CF3B6000A84F5 /* RequestManager.m */; };
 		A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B771E8CF3B6000A84F5 /* NetWork.m */; };
+		A87D8B7C1E8CFE04000A84F5 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */; };
+		A87D8B7F1E8CFE10000A84F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */; };
 		AD6D10F1FBE84096D09FA316 /* libPods-BuyCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,10 @@
 		A87D8B751E8CF3B6000A84F5 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
 		A87D8B761E8CF3B6000A84F5 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
 		A87D8B771E8CF3B6000A84F5 /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
+		A87D8B7A1E8CFE04000A84F5 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		A87D8B7D1E8CFE10000A84F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuyCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620681FB7D199C16EACACE1 /* Pods-BuyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		FADE49422889A8BFF5CCF353 /* Pods-BuyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.release.xcconfig"; sourceTree = "<group>"; };
@@ -307,6 +313,8 @@
 			children = (
 				A87D8B541E8CBBEC000A84F5 /* DKMeVC.h */,
 				A87D8B551E8CBBEC000A84F5 /* DKMeVC.m */,
+				A87D8B7D1E8CFE10000A84F5 /* LoginViewController.h */,
+				A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,6 +338,8 @@
 			children = (
 				A87D8B5D1E8CBC07000A84F5 /* DKMeVM.h */,
 				A87D8B5E1E8CBC07000A84F5 /* DKMeVM.m */,
+				A87D8B7A1E8CFE04000A84F5 /* LoginViewModel.h */,
+				A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -527,7 +537,9 @@
 				A87D8B501E8CBBDB000A84F5 /* DKHomeVC.m in Sources */,
 				A87D8B531E8CBBE4000A84F5 /* DKActivityVC.m in Sources */,
 				A87D8B491E8CBB8B000A84F5 /* DKBaseViewController.m in Sources */,
+				A87D8B7F1E8CFE10000A84F5 /* LoginViewController.m in Sources */,
 				A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */,
+				A87D8B7C1E8CFE04000A84F5 /* LoginViewModel.m in Sources */,
 				A87D8B5F1E8CBC07000A84F5 /* DKMeVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

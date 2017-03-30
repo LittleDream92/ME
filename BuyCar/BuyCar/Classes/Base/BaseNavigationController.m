@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.interactivePopGestureRecognizer.delegate = (id)self;
+    
     [self resetNavi];
 }
 
@@ -48,6 +50,14 @@
     [super pushViewController:viewController animated:animated];
 }
 
+#pragma mark - action
+// 表示的意思是:当前控制器是根控制器了,那么就不接收触摸事件,只有当不是根控制器时才需要接收事件.
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    return self.childViewControllers.count > 1;
+}
+
+
+#pragma mark -
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
