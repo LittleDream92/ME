@@ -1,0 +1,43 @@
+//
+//  BuyCar.pch
+//  BuyCar
+//
+//  Created by Meng Fan on 17/3/30.
+//  Copyright © 2017年 Meng Fan. All rights reserved.
+//
+
+#ifndef BuyCar_pch
+#define BuyCar_pch
+
+
+///------
+/// NSLog
+///------
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define WTKLog(fmt, ...) NSLog((@"\n[文件名:%s]\n""[函数名:%s]""[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define NSLog(...) {}
+#define WTKLog(...);
+#endif
+
+
+// 第三方
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Masonry/Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
+#import "UIImageView+WebCache.h"
+#import <AFNetworking/AFNetworking.h>
+
+
+//header
+#import "Config.h"
+#import "URL.h"
+#import "ColorAndFont.h"
+
+
+
+
+#endif /* BuyCar_pch */

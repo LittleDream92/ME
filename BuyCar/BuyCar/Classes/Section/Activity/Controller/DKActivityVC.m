@@ -1,29 +1,37 @@
 //
-//  ViewController.m
-//  BuyCar
+//  DKActivityVC.m
+//  QiCheGou
 //
-//  Created by Meng Fan on 17/3/30.
+//  Created by Meng Fan on 17/3/16.
 //  Copyright © 2017年 Meng Fan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DKActivityVC.h"
 
-@interface ViewController ()
+@interface DKActivityVC ()
 
 @end
 
-@implementation ViewController
+@implementation DKActivityVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
+#pragma mark - UI
 
 
+
+#pragma mark - action
+
+#pragma mark - lazyLoading
+
+#pragma mark -
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end
