@@ -1,0 +1,12 @@
+
+
+target ‘BuyCar’ do
+
+pod 'ReactiveCocoa', ‘2.5’
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SDWebImage' , '3.7.3'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'SVProgressHUD', '~> 2.0.3'
+
+end
