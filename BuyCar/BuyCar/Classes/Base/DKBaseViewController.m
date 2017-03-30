@@ -39,6 +39,9 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    //初始化跳转管理器
+    self.viewModel.naviImpl = [[ViewModelNavigationImpl alloc] initWithNavigationController:self.navigationController];
 
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject) {
         //自定义返回按钮

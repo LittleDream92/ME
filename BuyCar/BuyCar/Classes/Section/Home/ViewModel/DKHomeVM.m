@@ -10,4 +10,18 @@
 
 @implementation DKHomeVM
 
+-(instancetype)initWithProtocol:(id<BaseViewModelProtocol>)protocol params:(NSDictionary *)params {
+    self = [super initWithProtocol:protocol params:params];
+    
+    if (self) {
+        [self initViewModel];
+    }
+    return self;
+}
+
+
+- (void)initViewModel {
+    
+}
+
 @end

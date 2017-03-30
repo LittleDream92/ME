@@ -21,6 +21,7 @@
 		A87D8B591E8CBBF5000A84F5 /* DKHomeVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B581E8CBBF5000A84F5 /* DKHomeVM.m */; };
 		A87D8B5C1E8CBBFF000A84F5 /* DKActivityVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B5B1E8CBBFF000A84F5 /* DKActivityVM.m */; };
 		A87D8B5F1E8CBC07000A84F5 /* DKMeVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B5E1E8CBC07000A84F5 /* DKMeVM.m */; };
+		A87D8B671E8CDDD0000A84F5 /* ViewModelNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B661E8CDDD0000A84F5 /* ViewModelNavigationImpl.m */; };
 		AD6D10F1FBE84096D09FA316 /* libPods-BuyCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		A87D8B5B1E8CBBFF000A84F5 /* DKActivityVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKActivityVM.m; sourceTree = "<group>"; };
 		A87D8B5D1E8CBC07000A84F5 /* DKMeVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKMeVM.h; sourceTree = "<group>"; };
 		A87D8B5E1E8CBC07000A84F5 /* DKMeVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKMeVM.m; sourceTree = "<group>"; };
+		A87D8B651E8CDDD0000A84F5 /* ViewModelNavigationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelNavigationImpl.h; sourceTree = "<group>"; };
+		A87D8B661E8CDDD0000A84F5 /* ViewModelNavigationImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelNavigationImpl.m; sourceTree = "<group>"; };
 		CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuyCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620681FB7D199C16EACACE1 /* Pods-BuyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		FADE49422889A8BFF5CCF353 /* Pods-BuyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 				A87D8B281E8CBA22000A84F5 /* Root */,
 				A87D8B241E8CBA22000A84F5 /* Base */,
 				A87D8B251E8CBA22000A84F5 /* Category */,
+				A87D8B641E8CC0E0000A84F5 /* Tool */,
 				A87D8B261E8CBA22000A84F5 /* Common */,
 				A87D8B271E8CBA22000A84F5 /* Macro */,
 				A87D8B291E8CBA22000A84F5 /* Section */,
@@ -144,9 +148,7 @@
 				A87D8B451E8CBB27000A84F5 /* BaseNavigationController.m */,
 				A87D8B471E8CBB8B000A84F5 /* DKBaseViewController.h */,
 				A87D8B481E8CBB8B000A84F5 /* DKBaseViewController.m */,
-				A87D8B4A1E8CBB9E000A84F5 /* BaseViewModel.h */,
-				A87D8B4B1E8CBB9E000A84F5 /* BaseViewModel.m */,
-				A87D8B4C1E8CBB9E000A84F5 /* BaseViewModelProtocol.h */,
+				A87D8B631E8CBFE8000A84F5 /* ViewModel */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -346,6 +348,25 @@
 			name = APPDELEGATE;
 			sourceTree = "<group>";
 		};
+		A87D8B631E8CBFE8000A84F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A87D8B4A1E8CBB9E000A84F5 /* BaseViewModel.h */,
+				A87D8B4B1E8CBB9E000A84F5 /* BaseViewModel.m */,
+				A87D8B4C1E8CBB9E000A84F5 /* BaseViewModelProtocol.h */,
+				A87D8B651E8CDDD0000A84F5 /* ViewModelNavigationImpl.h */,
+				A87D8B661E8CDDD0000A84F5 /* ViewModelNavigationImpl.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A87D8B641E8CC0E0000A84F5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		B91161B5824B83EF48EC6604 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87D8B671E8CDDD0000A84F5 /* ViewModelNavigationImpl.m in Sources */,
 				A87D8B461E8CBB27000A84F5 /* BaseNavigationController.m in Sources */,
 				A87D8B5C1E8CBBFF000A84F5 /* DKActivityVM.m in Sources */,
 				A87D8B4D1E8CBB9E000A84F5 /* BaseViewModel.m in Sources */,

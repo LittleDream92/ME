@@ -10,13 +10,18 @@
 
 @interface DKHomeVC ()
 
+//viewModel
+@property (nonatomic, strong) DKHomeVM *viewModel;
+
 @end
 
+
 @implementation DKHomeVC
+@dynamic viewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
 }
 
 #pragma mark - UI
@@ -26,6 +31,7 @@
 #pragma mark - action
 
 #pragma mark - lazyLoading
+
 
 
 #pragma mark -

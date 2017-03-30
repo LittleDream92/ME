@@ -10,9 +10,13 @@
 
 @interface DKActivityVC ()
 
+//viewModel
+@property (nonatomic, strong) DKActivityVM *viewModel;
+
 @end
 
 @implementation DKActivityVC
+@dynamic viewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

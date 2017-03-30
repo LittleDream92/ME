@@ -10,9 +10,13 @@
 
 @interface DKMeVC ()
 
+//viewModel
+@property (nonatomic, strong) DKMeVM *viewModel;
+
 @end
 
 @implementation DKMeVC
+@dynamic viewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
