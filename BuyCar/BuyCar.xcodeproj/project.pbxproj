@@ -27,6 +27,9 @@
 		A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B771E8CF3B6000A84F5 /* NetWork.m */; };
 		A87D8B7C1E8CFE04000A84F5 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */; };
 		A87D8B7F1E8CFE10000A84F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */; };
+		A8A283101E8DEA2300B8F25F /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2830F1E8DEA2300B8F25F /* LoginView.m */; };
+		A8A283191E8E0A2700B8F25F /* CustomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A283181E8E0A2700B8F25F /* CustomButtonView.m */; };
+		A8A2831C1E8E35CD00B8F25F /* DKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2831B1E8E35CD00B8F25F /* DKTextField.m */; };
 		AD6D10F1FBE84096D09FA316 /* libPods-BuyCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,12 @@
 		A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		A87D8B7D1E8CFE10000A84F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A8A2830E1E8DEA2300B8F25F /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		A8A2830F1E8DEA2300B8F25F /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		A8A283171E8E0A2700B8F25F /* CustomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonView.h; sourceTree = "<group>"; };
+		A8A283181E8E0A2700B8F25F /* CustomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonView.m; sourceTree = "<group>"; };
+		A8A2831A1E8E35CD00B8F25F /* DKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTextField.h; sourceTree = "<group>"; };
+		A8A2831B1E8E35CD00B8F25F /* DKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTextField.m; sourceTree = "<group>"; };
 		CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuyCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620681FB7D199C16EACACE1 /* Pods-BuyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		FADE49422889A8BFF5CCF353 /* Pods-BuyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +187,10 @@
 		A87D8B261E8CBA22000A84F5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A8A2831A1E8E35CD00B8F25F /* DKTextField.h */,
+				A8A2831B1E8E35CD00B8F25F /* DKTextField.m */,
+				A8A283171E8E0A2700B8F25F /* CustomButtonView.h */,
+				A8A283181E8E0A2700B8F25F /* CustomButtonView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -329,6 +342,8 @@
 		A87D8B371E8CBA22000A84F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8A2830E1E8DEA2300B8F25F /* LoginView.h */,
+				A8A2830F1E8DEA2300B8F25F /* LoginView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A283191E8E0A2700B8F25F /* CustomButtonView.m in Sources */,
 				A87D8B781E8CF3B6000A84F5 /* RequestManager.m in Sources */,
 				A87D8B671E8CDDD0000A84F5 /* ViewModelNavigationImpl.m in Sources */,
 				A87D8B461E8CBB27000A84F5 /* BaseNavigationController.m in Sources */,
@@ -538,9 +554,11 @@
 				A87D8B531E8CBBE4000A84F5 /* DKActivityVC.m in Sources */,
 				A87D8B491E8CBB8B000A84F5 /* DKBaseViewController.m in Sources */,
 				A87D8B7F1E8CFE10000A84F5 /* LoginViewController.m in Sources */,
+				A8A283101E8DEA2300B8F25F /* LoginView.m in Sources */,
 				A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */,
 				A87D8B7C1E8CFE04000A84F5 /* LoginViewModel.m in Sources */,
 				A87D8B5F1E8CBC07000A84F5 /* DKMeVM.m in Sources */,
+				A8A2831C1E8E35CD00B8F25F /* DKTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

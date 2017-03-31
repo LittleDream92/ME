@@ -10,4 +10,7 @@
 
 @interface DKMeVM : BaseViewModel
 
+//登录
+@property (nonatomic, strong) RACSubject *loginSubject;
+
 @end
