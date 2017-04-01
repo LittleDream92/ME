@@ -41,11 +41,11 @@
 -(void)bindViewModel {
     [super bindViewModel];
     
+    RAC(self.viewModel, tel) = self.loginView.telTextField.rac_textSignal;
+    RAC(self.viewModel, pwd) = self.loginView.pwdTextField.rac_textSignal;
+    
     @weakify(self);
-    [[self.loginView.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        @strongify(self);
-        [self.viewModel.loginSubject sendNext:x];
-    }];
+    self.loginView.loginBtn.rac_command = self.viewModel.loginCommand;
     
     [[self.loginView.registBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self);
@@ -68,7 +68,7 @@
 -(LoginView *)loginView {
     if (!_loginView) {
         _loginView = [[LoginView alloc] initWithFrame:self.view.bounds];
-        
+        _loginView.viewModel = self.viewModel;
     }
     return _loginView;
 }

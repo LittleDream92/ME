@@ -74,14 +74,23 @@
 + (RACSignal *)postWithURL:(NSString *)urlString
                  parameter:(NSDictionary *)param {
     
+    NSString *url = [NSString stringWithFormat:@"%@%@", URL_String ,urlString];
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     //超时时间 5S
     manager.requestSerializer.timeoutInterval = 5;
     
     RACSubject *sub = [RACSubject subject];
     
-    [manager POST:urlString parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+    [manager POST:url parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+  /*
+        NSDictionary *responseDict = responseObject;
+        if (responseObject[@"status"]) {
+            
+        } else {
+            
+        }
+   */
         [sub sendNext:@{@"code":@100, @"data":responseObject}];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

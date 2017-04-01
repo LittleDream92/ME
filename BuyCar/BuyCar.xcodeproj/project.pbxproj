@@ -27,9 +27,15 @@
 		A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B771E8CF3B6000A84F5 /* NetWork.m */; };
 		A87D8B7C1E8CFE04000A84F5 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */; };
 		A87D8B7F1E8CFE10000A84F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */; };
+		A89B70D91E8F8EC900F9C44C /* BaseFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B70D81E8F8EC900F9C44C /* BaseFunction.m */; };
 		A8A283101E8DEA2300B8F25F /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2830F1E8DEA2300B8F25F /* LoginView.m */; };
 		A8A283191E8E0A2700B8F25F /* CustomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A283181E8E0A2700B8F25F /* CustomButtonView.m */; };
 		A8A2831C1E8E35CD00B8F25F /* DKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2831B1E8E35CD00B8F25F /* DKTextField.m */; };
+		A8A2831F1E8E470300B8F25F /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2831E1E8E470300B8F25F /* RegistViewController.m */; };
+		A8A283221E8E470E00B8F25F /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A283211E8E470E00B8F25F /* ChangePwdViewController.m */; };
+		A8A283251E8E472C00B8F25F /* RegistAndChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A283241E8E472C00B8F25F /* RegistAndChangePwdView.m */; };
+		A8A283281E8E476000B8F25F /* RegistViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A283271E8E476000B8F25F /* RegistViewModel.m */; };
+		A8A2832B1E8E498600B8F25F /* ChangePwdViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2832A1E8E498600B8F25F /* ChangePwdViewModel.m */; };
 		AD6D10F1FBE84096D09FA316 /* libPods-BuyCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */; };
 /* End PBXBuildFile section */
 
@@ -78,12 +84,24 @@
 		A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		A87D8B7D1E8CFE10000A84F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A89B70D71E8F8EC900F9C44C /* BaseFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFunction.h; sourceTree = "<group>"; };
+		A89B70D81E8F8EC900F9C44C /* BaseFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFunction.m; sourceTree = "<group>"; };
 		A8A2830E1E8DEA2300B8F25F /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		A8A2830F1E8DEA2300B8F25F /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		A8A283171E8E0A2700B8F25F /* CustomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonView.h; sourceTree = "<group>"; };
 		A8A283181E8E0A2700B8F25F /* CustomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonView.m; sourceTree = "<group>"; };
 		A8A2831A1E8E35CD00B8F25F /* DKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTextField.h; sourceTree = "<group>"; };
 		A8A2831B1E8E35CD00B8F25F /* DKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTextField.m; sourceTree = "<group>"; };
+		A8A2831D1E8E470300B8F25F /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		A8A2831E1E8E470300B8F25F /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		A8A283201E8E470E00B8F25F /* ChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdViewController.h; sourceTree = "<group>"; };
+		A8A283211E8E470E00B8F25F /* ChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdViewController.m; sourceTree = "<group>"; };
+		A8A283231E8E472C00B8F25F /* RegistAndChangePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistAndChangePwdView.h; sourceTree = "<group>"; };
+		A8A283241E8E472C00B8F25F /* RegistAndChangePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistAndChangePwdView.m; sourceTree = "<group>"; };
+		A8A283261E8E476000B8F25F /* RegistViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewModel.h; sourceTree = "<group>"; };
+		A8A283271E8E476000B8F25F /* RegistViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewModel.m; sourceTree = "<group>"; };
+		A8A283291E8E498600B8F25F /* ChangePwdViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdViewModel.h; sourceTree = "<group>"; };
+		A8A2832A1E8E498600B8F25F /* ChangePwdViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdViewModel.m; sourceTree = "<group>"; };
 		CC42139FA02E50033CD2B201 /* libPods-BuyCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuyCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620681FB7D199C16EACACE1 /* Pods-BuyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		FADE49422889A8BFF5CCF353 /* Pods-BuyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyCar/Pods-BuyCar.release.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +346,10 @@
 				A87D8B551E8CBBEC000A84F5 /* DKMeVC.m */,
 				A87D8B7D1E8CFE10000A84F5 /* LoginViewController.h */,
 				A87D8B7E1E8CFE10000A84F5 /* LoginViewController.m */,
+				A8A2831D1E8E470300B8F25F /* RegistViewController.h */,
+				A8A2831E1E8E470300B8F25F /* RegistViewController.m */,
+				A8A283201E8E470E00B8F25F /* ChangePwdViewController.h */,
+				A8A283211E8E470E00B8F25F /* ChangePwdViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,6 +366,8 @@
 			children = (
 				A8A2830E1E8DEA2300B8F25F /* LoginView.h */,
 				A8A2830F1E8DEA2300B8F25F /* LoginView.m */,
+				A8A283231E8E472C00B8F25F /* RegistAndChangePwdView.h */,
+				A8A283241E8E472C00B8F25F /* RegistAndChangePwdView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,6 +379,10 @@
 				A87D8B5E1E8CBC07000A84F5 /* DKMeVM.m */,
 				A87D8B7A1E8CFE04000A84F5 /* LoginViewModel.h */,
 				A87D8B7B1E8CFE04000A84F5 /* LoginViewModel.m */,
+				A8A283261E8E476000B8F25F /* RegistViewModel.h */,
+				A8A283271E8E476000B8F25F /* RegistViewModel.m */,
+				A8A283291E8E498600B8F25F /* ChangePwdViewModel.h */,
+				A8A2832A1E8E498600B8F25F /* ChangePwdViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -397,6 +425,8 @@
 		A87D8B641E8CC0E0000A84F5 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				A89B70D71E8F8EC900F9C44C /* BaseFunction.h */,
+				A89B70D81E8F8EC900F9C44C /* BaseFunction.m */,
 				A87D8B711E8CF008000A84F5 /* MapManager.h */,
 				A87D8B721E8CF008000A84F5 /* MapManager.m */,
 				A87D8B741E8CF3B6000A84F5 /* RequestManager.h */,
@@ -540,19 +570,25 @@
 			files = (
 				A8A283191E8E0A2700B8F25F /* CustomButtonView.m in Sources */,
 				A87D8B781E8CF3B6000A84F5 /* RequestManager.m in Sources */,
+				A8A283281E8E476000B8F25F /* RegistViewModel.m in Sources */,
 				A87D8B671E8CDDD0000A84F5 /* ViewModelNavigationImpl.m in Sources */,
 				A87D8B461E8CBB27000A84F5 /* BaseNavigationController.m in Sources */,
 				A87D8B731E8CF008000A84F5 /* MapManager.m in Sources */,
 				A87D8B5C1E8CBBFF000A84F5 /* DKActivityVM.m in Sources */,
+				A8A2831F1E8E470300B8F25F /* RegistViewController.m in Sources */,
 				A87D8B4D1E8CBB9E000A84F5 /* BaseViewModel.m in Sources */,
+				A8A283251E8E472C00B8F25F /* RegistAndChangePwdView.m in Sources */,
 				A87D8B431E8CBB18000A84F5 /* RootTabbarController.m in Sources */,
 				A87D8B561E8CBBEC000A84F5 /* DKMeVC.m in Sources */,
 				A87D8B591E8CBBF5000A84F5 /* DKHomeVM.m in Sources */,
 				A87D8B111E8CB8B4000A84F5 /* AppDelegate.m in Sources */,
+				A8A2832B1E8E498600B8F25F /* ChangePwdViewModel.m in Sources */,
 				A87D8B0E1E8CB8B4000A84F5 /* main.m in Sources */,
 				A87D8B501E8CBBDB000A84F5 /* DKHomeVC.m in Sources */,
 				A87D8B531E8CBBE4000A84F5 /* DKActivityVC.m in Sources */,
+				A89B70D91E8F8EC900F9C44C /* BaseFunction.m in Sources */,
 				A87D8B491E8CBB8B000A84F5 /* DKBaseViewController.m in Sources */,
+				A8A283221E8E470E00B8F25F /* ChangePwdViewController.m in Sources */,
 				A87D8B7F1E8CFE10000A84F5 /* LoginViewController.m in Sources */,
 				A8A283101E8DEA2300B8F25F /* LoginView.m in Sources */,
 				A87D8B791E8CF3B6000A84F5 /* NetWork.m in Sources */,
@@ -594,6 +630,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -641,6 +678,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

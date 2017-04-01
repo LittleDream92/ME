@@ -42,6 +42,7 @@
 #import "MapManager.h"
 #import "NetWork.h"
 #import "RequestManager.h"
+#import "BaseFunction.h"
 
 
 #endif /* BuyCar_pch */

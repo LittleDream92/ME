@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "DKTextField.h"
 
+@class LoginViewModel;
 @interface LoginView : UIView
+
+@property (nonatomic, strong) LoginViewModel *viewModel;
 
 @property (nonatomic, strong) DKTextField *telTextField;
 @property (nonatomic, strong) DKTextField *pwdTextField;

@@ -10,8 +10,12 @@
 
 @interface LoginViewModel : BaseViewModel
 
+
+@property (nonatomic, copy) NSString *tel;
+@property (nonatomic, copy) NSString *pwd;
+
 //登录
-@property (nonatomic, strong) RACSubject *loginSubject;
+@property (nonatomic, strong) RACCommand *loginCommand;
 
 //注册
 @property (nonatomic, strong) RACSubject *registSubject;

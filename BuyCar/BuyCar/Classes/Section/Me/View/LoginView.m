@@ -8,10 +8,14 @@
 
 #import "LoginView.h"
 #import "CustomButtonView.h"
+#import "LoginViewModel.h"
 
 @interface LoginView () <CustomButtonProtocol>
 
 @property (nonatomic, strong) CustomButtonView *controlView;
+
+//标记 密码登录 或者 验证码登录
+@property (nonatomic, assign) NSInteger styleIndex;
 
 @end
 
@@ -22,6 +26,8 @@
     self = [super initWithFrame:frame];
     
     if (self) {
+        self.styleIndex = 0;
+        
         [self setupViews];
     }
     return self;
@@ -58,11 +64,21 @@
 -(void)getTag:(NSInteger)tag {
     NSInteger index = tag - 1501;
     
+    if (index == self.styleIndex) {
+        return;
+    }
+    
+    self.styleIndex = index;
+    
     if (index == 0) {
         NSLog(@"密码登录");
         self.forgotPWDBtn.hidden = NO;
         self.sendCodeBtn.hidden = YES;
         
+        self.viewModel.pwd = @"";
+        self.pwdTextField.text = @"";
+        self.pwdTextField.secureTextEntry = YES;
+        self.pwdTextField.keyboardType = UIKeyboardTypeDefault;
         self.pwdTextField.placeholder = @"请输入密码";
         
     }else {
@@ -71,6 +87,10 @@
         self.forgotPWDBtn.hidden = YES;
         self.sendCodeBtn.hidden = NO;
         
+        self.viewModel.pwd = @"";
+        self.pwdTextField.text = @"";
+        self.pwdTextField.secureTextEntry = NO;
+        self.pwdTextField.keyboardType = UIKeyboardTypeNumberPad;
         self.pwdTextField.placeholder = @"请输入验证码";
     }
 }
@@ -113,6 +133,8 @@
         _pwdTextField = [[DKTextField alloc] init];
         _pwdTextField.placeholder = @"请输入密码";
         [_pwdTextField setBackground:[UIImage imageNamed:@"textField_bg"]];
+        
+        _pwdTextField.secureTextEntry = YES;
         
         _pwdTextField.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_pwd"]];
         _pwdTextField.leftViewMode = UITextFieldViewModeAlways;
