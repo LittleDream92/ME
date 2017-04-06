@@ -24,7 +24,6 @@
 
     //1.这种直接加入直接在首页的时候就已经获取定位拿到当前城市，在你要用的地方直接取.
     NSLog(@"gps----%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"CurrentCityKey"]);
-    self.view.backgroundColor = [UIColor cyanColor];
     
     //2.有一种情况是某些APP当你用到的定位的时候才回去提示用户，获取当前城市，可以用下面这种.
     //    [[MapManager sharedMapManager] dk_getGps];

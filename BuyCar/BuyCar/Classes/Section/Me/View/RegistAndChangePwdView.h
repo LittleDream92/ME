@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class DKTextField;
 @interface RegistAndChangePwdView : UIView
+
+@property (nonatomic, strong) DKTextField *telTextFiled;
+@property (nonatomic, strong) DKTextField *pwdTextField;
+@property (nonatomic, strong) UITextField *rePwdTextField;
+@property (nonatomic, strong) DKTextField *codeTextField;
+
+@property (nonatomic, strong) UIButton *getCodeBtn;
+
+@property (nonatomic, strong) DKTextField *nameTextField;
+
+//自定义初始化方法
+-(instancetype)initWithFrame:(CGRect)frame isRegist:(BOOL)isRegist;
 
 @end

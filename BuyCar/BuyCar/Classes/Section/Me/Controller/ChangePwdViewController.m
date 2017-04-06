@@ -9,7 +9,11 @@
 #import "ChangePwdViewController.h"
 #import "ChangePwdViewModel.h"
 
+#import "RegistAndChangePwdView.h"
+
 @interface ChangePwdViewController ()
+
+@property (nonatomic, strong) RegistAndChangePwdView *textfieldView;
 
 //ViewModel
 @property (nonatomic, strong) ChangePwdViewModel *viewModel;
@@ -21,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = BASE_GRAY_COLOR;
     [self bindViewModel];
     [self setupViews];
 }
@@ -28,6 +34,7 @@
 
 #pragma mark - UI
 - (void)setupViews {
+    [self.view addSubview:self.textfieldView];
     
 }
 
@@ -40,6 +47,12 @@
 
 
 #pragma mark - lazyLoading
+-(RegistAndChangePwdView *)textfieldView {
+    if (!_textfieldView) {
+        _textfieldView = [[RegistAndChangePwdView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight) isRegist:NO];
+    }
+    return _textfieldView;
+}
 
 
 #pragma mark -

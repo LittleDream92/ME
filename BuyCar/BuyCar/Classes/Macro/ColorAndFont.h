@@ -18,6 +18,7 @@
 
 #define BLACK_COLOR DKCOLOR(50,50,50,1)
 
+#define BASE_GRAY_COLOR DKCOLOR(244, 244, 244, 1)
 
 
 #endif /* ColorAndFont_h */

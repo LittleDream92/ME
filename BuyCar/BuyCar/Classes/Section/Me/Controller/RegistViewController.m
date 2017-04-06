@@ -9,7 +9,11 @@
 #import "RegistViewController.h"
 #import "RegistViewModel.h"
 
+#import "RegistAndChangePwdView.h"
+
 @interface RegistViewController ()
+
+@property (nonatomic, strong) RegistAndChangePwdView *textfieldView;
 
 //ViewModel
 @property (nonatomic, strong) RegistViewModel *viewModel;
@@ -22,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = BASE_GRAY_COLOR;
     [self bindViewModel];
     [self setupViews];
 }
@@ -29,7 +34,7 @@
 
 #pragma mark - UI
 - (void)setupViews {
-    
+    [self.view addSubview:self.textfieldView];
 }
 
 
@@ -42,6 +47,12 @@
 
 
 #pragma mark - lazyLoading
+-(RegistAndChangePwdView *)textfieldView {
+    if (!_textfieldView) {
+        _textfieldView = [[RegistAndChangePwdView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight) isRegist:YES];
+    }
+    return _textfieldView;
+}
 
 
 #pragma mark -
